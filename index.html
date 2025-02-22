@@ -26,6 +26,26 @@
             text-align: center;
         }
 
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            text-align: left;
+        }
+
         nav {
             background-color: #34495e;
             padding: 20px 0;
@@ -86,14 +106,26 @@
             .container {
                 padding: 10px;
             }
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-info {
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Your Name</h1>
-            <p>Your Title or Tagline</p>
+            <div class="profile-section">
+                <img src="https://github.com/haoxie912/haoxie912.github.io/blob/a8542e377a7325d9d0eaad54793ca3f2faf25d9a/cachedImage.jpg" alt="Your Profile Picture" class="profile-image">
+                <div class="profile-info">
+                    <h1>Your Name</h1>
+                    <p>Your Title or Tagline</p>
+                </div>
+            </div>
         </div>
     </header>
 
